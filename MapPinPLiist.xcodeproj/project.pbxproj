@@ -14,6 +14,9 @@
 		05B13A921F6E54C200669037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B13A901F6E54C200669037 /* LaunchScreen.storyboard */; };
 		05B13A9B1F6E553200669037 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B13A9A1F6E553200669037 /* MapKit.framework */; };
 		05B13A9D1F6E5BA800669037 /* ViewPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05B13A9C1F6E5BA800669037 /* ViewPoint.plist */; };
+		05B13A9F1F6E794100669037 /* DIT_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B13A9E1F6E794100669037 /* DIT_logo.png */; };
+		05B13AA11F6E795F00669037 /* citizen_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B13AA01F6E795F00669037 /* citizen_logo.png */; };
+		05B13AA31F6E7B8500669037 /* Songsang.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B13AA21F6E7B8500669037 /* Songsang.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		05B13A931F6E54C200669037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B13A9A1F6E553200669037 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		05B13A9C1F6E5BA800669037 /* ViewPoint.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ViewPoint.plist; path = ../../Map01_Data_Model_pList/Map01_Data_Model_pList/ViewPoint.plist; sourceTree = "<group>"; };
+		05B13A9E1F6E794100669037 /* DIT_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DIT_logo.png; sourceTree = "<group>"; };
+		05B13AA01F6E795F00669037 /* citizen_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = citizen_logo.png; sourceTree = "<group>"; };
+		05B13AA21F6E7B8500669037 /* Songsang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Songsang.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 		05B13A861F6E54C200669037 /* MapPinPLiist */ = {
 			isa = PBXGroup;
 			children = (
+				05B13AA21F6E7B8500669037 /* Songsang.png */,
+				05B13AA01F6E795F00669037 /* citizen_logo.png */,
+				05B13A9E1F6E794100669037 /* DIT_logo.png */,
 				05B13A871F6E54C200669037 /* AppDelegate.swift */,
 				05B13A891F6E54C200669037 /* ViewController.swift */,
 				05B13A9C1F6E5BA800669037 /* ViewPoint.plist */,
@@ -139,8 +148,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B13AA31F6E7B8500669037 /* Songsang.png in Resources */,
 				05B13A921F6E54C200669037 /* LaunchScreen.storyboard in Resources */,
+				05B13A9F1F6E794100669037 /* DIT_logo.png in Resources */,
 				05B13A8F1F6E54C200669037 /* Assets.xcassets in Resources */,
+				05B13AA11F6E795F00669037 /* citizen_logo.png in Resources */,
 				05B13A9D1F6E5BA800669037 /* ViewPoint.plist in Resources */,
 				05B13A8D1F6E54C200669037 /* Main.storyboard in Resources */,
 			);
