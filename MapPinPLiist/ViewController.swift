@@ -44,7 +44,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 
                 print("myLat = \(myLat)")
                 
-                
                 annotation.coordinate.latitude = myLat
                 annotation.coordinate.longitude = myLong
                 annotation.title = title as? String
