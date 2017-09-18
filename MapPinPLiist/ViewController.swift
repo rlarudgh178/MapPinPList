@@ -28,7 +28,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         var annotations = [MKPointAnnotation]()
         
+        // optional binding
         if let myItems = contents {
+            // Dictionary Array에서 값 뽑기
             for item in myItems {
                 let lat = (item as AnyObject).value(forKey: "lat")
                 let long = (item as AnyObject).value(forKey: "long")
@@ -41,19 +43,23 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 
                 let myLat = (lat as! NSString).doubleValue
                 let myLong = (long as! NSString).doubleValue
+                let myTitle = title as! String
+                let mySubTitle = subTitle as! String
                 
                 print("myLat = \(myLat)")
                 
                 annotation.coordinate.latitude = myLat
                 annotation.coordinate.longitude = myLong
-                annotation.title = title as? String
-                annotation.subtitle = subTitle as? String
+                annotation.title = myTitle
+                annotation.subtitle = mySubTitle
                 
                 annotations.append(annotation)
                 
                 myMapView.delegate = self
                 
             }
+        } else {
+            print("contents의 값은 nil")
         }
         
         myMapView.showAnnotations(annotations, animated: true)
