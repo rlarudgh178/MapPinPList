@@ -18,7 +18,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         zoomToRegion()
         
-        ////////////////////////////
+        /////////////////////////////
         
         let path = Bundle.main.path(forResource: "ViewPoint", ofType: "plist")
         print("path = \(String(describing: path))")
