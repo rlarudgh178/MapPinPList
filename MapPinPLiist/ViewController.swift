@@ -20,7 +20,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         /////////////////////////////
         
-        let path = Bundle.main.path(forResource: "ViewPoint", ofType: "plist")
+        let path = Bundle.main.path(forResource: "ViewPoint2", ofType: "plist")
         print("path = \(String(describing: path))")
         
         let contents = NSArray(contentsOfFile: path!)
