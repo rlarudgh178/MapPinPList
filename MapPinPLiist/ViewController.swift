@@ -94,18 +94,20 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 leftIconView.image = UIImage(named:"citizen_logo.png" )
                 annotationView?.leftCalloutAccessoryView = leftIconView
                 
-            } else if annotation.title! == "DIT 동의과학대학교" {
-                // 동의과학대학교
-                let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
-                leftIconView.image = UIImage(named:"DIT_logo.png" )
-                annotationView?.leftCalloutAccessoryView = leftIconView
-                
-            } else {
+            } else if annotation.title! == "송상현광장" {
                 // 송상현광장
                 annotationView?.pinTintColor = UIColor.blue
                 let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
                 leftIconView.image = UIImage(named:"Songsang.png" )
                 annotationView?.leftCalloutAccessoryView = leftIconView
+                
+            } else {
+                // 동의과학대학교
+                annotationView?.pinTintColor = UIColor.red
+                let leftIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
+                leftIconView.image = UIImage(named:"DIT_logo.png" )
+                annotationView?.leftCalloutAccessoryView = leftIconView
+                
             }
         } else {
             annotationView?.annotation = annotation
